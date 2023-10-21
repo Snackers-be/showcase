@@ -1,17 +1,12 @@
 <?php
 
-namespace App\Service;
+namespace App\Dto;
 
 use App\Repository\CompanyRepository;
 
 class GlobalCompanyInfos
 {
     private $infos;
-
-//    public function __invoke()
-//    {
-//        return $this->infos;
-//    }
 
     public function __construct(CompanyRepository $repository)
     {
