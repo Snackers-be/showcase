@@ -35,6 +35,7 @@ module.exports = {
                 blackAlt: "#2F2F2F",
                 secondary: "#FFCB74",
                 darkWhite: "#111111",
+                darkWhiteAlt: "#2F2F2F",
                 darkBlack: "#F6F6F6",
                 darkSecondary: "#FFCB74",
             },
