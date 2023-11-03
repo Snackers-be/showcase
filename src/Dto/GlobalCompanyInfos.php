@@ -2,6 +2,7 @@
 
 namespace App\Dto;
 
+use App\Entity\Company;
 use App\Repository\CompanyRepository;
 
 class GlobalCompanyInfos
@@ -10,7 +11,8 @@ class GlobalCompanyInfos
 
     public function __construct(CompanyRepository $repository)
     {
-        $this->infos =  $repository->findAll()[0];
+        !is_null($repository->findAll()) ? $this->infos =  $repository->findAll()[0] : $this->infos = new Company();
+//        $this->infos =  $repository->findAll()[0];
     }
 
     public function getName(): ?string
