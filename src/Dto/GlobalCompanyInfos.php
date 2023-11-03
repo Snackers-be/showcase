@@ -11,7 +11,7 @@ class GlobalCompanyInfos
 
     public function __construct(CompanyRepository $repository)
     {
-        if (null !== $repository->findAll()) $this->infos = $repository->findAll()[0] ;
+        if (!empty($repository->findAll())) $this->infos = $repository->findAll()[0] ;
         else $this->infos = new Company();
 //        $this->infos =  $repository->findAll()[0];
     }
