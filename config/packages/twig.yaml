@@ -1,5 +1,10 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
+    paths:
+        '%kernel.project_dir%/templates/themes/%env(APP_THEME)%/components': components
+#    paths:
+#        '%kernel.project_dir%/templates/themes/%env(APP_THEME)%/components/': componentssd
+#        '%kernel.project_dir%/templates/themes/%env(APP_THEME)%/components/': anonymous_template_directory
     form_themes: ['tailwind_2_layout.html.twig']
     globals:
         app_theme: '%env(APP_THEME)%'
