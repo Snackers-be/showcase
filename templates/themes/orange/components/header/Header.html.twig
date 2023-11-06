@@ -17,27 +17,52 @@
                 </svg>
             </div>
         </div>
-        <nav class="min-h-[50vh] pt-12 text-xl flex flex-col gap-5 text-black -mt-[50vh] -z-20 transition-all duration-500 ease-in-out bg-white dark:bg-darkWhite"
+        <nav class="min-h-[50vh] pt-12 text-xl flex flex-col gap-5 text-black -mt-[55vh] -z-20 transition-all duration-500 ease-in-out bg-white dark:bg-darkWhite"
                 {{ stimulus_target('menu', 'nav') }}>
-           <ul class="pl-6 pt-16">
-            {% for route, name in routes %}
-                <li>
-                    {{ component('Link', {
-                        route: route,
-                        label: name,
-                        class: "!text-black dark:!text-darkBlack"
-                    }) }}
-                </li>
-            {% endfor %}
-           </ul>
+            <ul class="pl-6 pt-16">
+
+
+                {#               TEMP REMOVE #}
+                {#            {% for route, name in routes %} #}
+                {#                <li> #}
+                {#                    {{ component('Link', { #}
+                {#                        route: route, #}
+                {#                        label: name, #}
+                {#                        class: "!text-black dark:!text-darkBlack !my-3 !no-underline border-b border-black/50 dark:border-darkBlack/50" #}
+                {#                    }) }} #}
+                {#                </li> #}
+                {#            {% endfor %} #}
+
+                {#               TEMP DISPLAY #}
+                    <li>
+                        {{ component('Link', {
+                            route: 'app_home',
+                            label: 'Accueil',
+                            class: "!text-black dark:!text-darkBlack !my-3 !no-underline border-b border-black/50 dark:border-darkBlack/50"
+                        }) }}
+                    </li>
+                    <li>
+                        {{ component('Link', {
+                            route: 'app_contact',
+                            label: 'Contact',
+                            class: "!text-black dark:!text-darkBlack !my-3 !no-underline border-b border-black/50 dark:border-darkBlack/50"
+                        }) }}
+                    </li>
+
+                {#             END  TEMP DISPLAY #}
+
+
+            </ul>
         </nav>
     </div>
-    {#    desctop #}
+    {#    desktop #}
     <div class="w-full px-8 hidden lg:grid grid-cols-12 gap-4 my-9" {{ stimulus_target('menu', 'desktop') }}>
         <div class="col-span-3 flex items-center font-black text-lg text-black dark:text-darkBlack">{{ app_company_infos.name }}</div>
         <nav class="col-span-8 flex items-center">
             <ul class="flex justify-start items-center gap-5">
-                {% for route, name in routes %}
+
+{#                TEMP REMoVE#}
+{#                {% for route, name in routes %}
                     <li>
                         {{ component('Link', {
                             route: route,
@@ -45,7 +70,25 @@
                             class: "!text-black dark:!text-darkBlack"
                         }) }}
                     </li>
-                {% endfor %}
+                {% endfor %}#}
+                {#               TEMP DISPLAY #}
+                    <li>
+                        {{ component('Link', {
+                            route: 'app_home',
+                            label: 'Accueil',
+                            class: "!text-black dark:!text-darkBlack !my-3 !no-underline border-b border-black/50 dark:border-darkBlack/50"
+                        }) }}
+                    </li>
+                    <li>
+                        {{ component('Link', {
+                            route: 'app_contact',
+                            label: 'Contact',
+                            class: "!text-black dark:!text-darkBlack !my-3 !no-underline border-b border-black/50 dark:border-darkBlack/50"
+                        }) }}
+                    </li>
+
+                {#             END  TEMP DISPLAY #}
+
             </ul>
         </nav>
         <div class="">
