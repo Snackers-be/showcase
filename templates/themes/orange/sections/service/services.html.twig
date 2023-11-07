@@ -15,11 +15,9 @@
        <div class="w-full relative">
 
            {{ component('HomeSectionHeader', {
-               title: "Services",
+               title: "A votre service !",
                header: "Je mets à disposition mes services, n'hésitez pas à me contacter.",
-               description: "Fort d'une vaste gamme de compétences et
-                   d'expertises, je vous propose mes services avec enthousiasme. Que ce soit pour répondre à vos besoins professionnels ou personnels,
-                   je suis là pour vous accompagner."
+               description: "Ensemble, trouvons des réponses à vos besoins en snack grâce à mon aide artisanale. Je suis là pour discuter de la manière dont je peux contribuer à résoudre vos problèmes et assurer votre succès."
            }) }}
 
 
@@ -47,7 +45,7 @@
 
                        {% endfor %}
                    </div>
-                   {{ component("Button", {
+                   {{ component("Primary", {
                        'class': 'font-poppins-medium',
                        'label': 'Découvrez les services',
                        'route': 'app_services'
