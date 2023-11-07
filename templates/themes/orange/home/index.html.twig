@@ -1,6 +1,8 @@
 {% extends 'themes/'~app_theme~'/base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Création de Sites Internet & Outils Web pour Snacks et Sandwicheries | snackers.be{% endblock %}
+{% block meta_description %}Professionnels de la création de sites internet et d'outils web sur mesure pour snacks et sandwicheries. Optimisez votre présence en ligne pour attirer plus de clients et simplifiez votre gestion d'entreprise. Contactez-nous dès aujourd'hui ! | Liège{% endblock %}
+
 
 {% block body %}
 
@@ -8,8 +10,8 @@
         {% include 'themes/'~app_theme~'/sections/home/hero.html.twig' %}
     {% endif %}
     {% include 'themes/'~app_theme~'/sections/service/services.html.twig' %}
-    {% include 'themes/'~app_theme~'/sections/news/news-home.html.twig' %}
-    {% include 'themes/'~app_theme~'/sections/album/albums-home.html.twig' %}
+{#    {% include 'themes/'~app_theme~'/sections/news/news-home.html.twig' %}#}
+{#    {% include 'themes/'~app_theme~'/sections/album/albums-home.html.twig' %}#}
     {% include 'themes/'~app_theme~'/sections/social-networks/home.html.twig' %}
 
 {% endblock %}

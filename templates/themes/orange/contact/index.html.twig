@@ -1,10 +1,10 @@
 {% extends 'themes/'~app_theme~'/layouts/page-layout.html.twig' %}
 
+{% block title %}Conception de Sites Web & Outils sur Mesure pour Snacks et Sandwicheries | snackers.be{% endblock %}
+{% block meta_description %}Découvrez nos services de création de sites web sur mesure et d'outils web innovants conçus spécialement pour les snacks et sandwicheries. Boostez votre présence en ligne et simplifiez votre gestion quotidienne. Contactez-nous pour des solutions personnalisées. | Liège{% endblock %}
         {% block page_title %}
             {{ component("H1", {label: "Contact"}) }}
         {% endblock %}
-
-{% block title %}Contact{% endblock %}
 
 {% block body %}
     <div class="flex flex-col px-16 my-16">
@@ -106,8 +106,10 @@
                         </svg>
                     </span>
                     {{ component('H3', {label: "Adresse", class: "py-3  text-black/70 dark:text-darkBlack/70"}) }}
-                    <p class="text-left pl-1/5"> {{ company.streetName }}{{ company.streetNr }} <br/>
-                        {{ company.postalCode }}    {{ company.postalCity }}
+                    <p class="text-left pl-1/5">
+                        Grivegnée<br />
+                        {#{{ company.streetName }}{{ company.streetNr }} <br/>
+                        {{ company.postalCode }}    {{ company.postalCity }}#}
                     </p>
                 </div>
             </div>
