@@ -22,7 +22,7 @@ export default class extends Controller {
 
     toggle() {
         if (this.mobileTarget !== undefined) {
-            this.navTarget.classList.toggle("-mt-[55vh]")
+            this.navTarget.classList.toggle("-mt-[70vh]")
         }
     }
 }
