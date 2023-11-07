@@ -7,13 +7,13 @@
         {% endblock %}
 
 {% block body %}
-    <div class="flex flex-col px-16 my-16">
+    <div class="flex flex-col px-3 md:px-8 lg:px-16 my-16">
         <div class="w-full md:max-w-5xl p-6">
             {{ component('H2', {
                 label: "N'hésitez pas à me contacter"
             }) }}
 
-            <div class="leading-relaxed font-medium py-6">
+            <div class="leading-loose font-medium py-6">
                 Votre avis compte beaucoup pour moi, alors n'hésitez pas à me contacter pour toute question,
                 suggestion ou demande de collaboration. Je suis toujours ravi de discuter avec vous, alors
                 envoyez-moi un message, et je vous répondrai dès que possible.
@@ -73,7 +73,7 @@
                 label: "Restons en contact"
             }) }}
             <div class="grid md:grid-cols-3 text-center my-16">
-                <div class="flex items-center flex-col justify-center">
+                <div class="flex flex-col items-center justify-center my-8 md:my-0">
                     <span class="block w-16 h-16 rounded-full  bg-red-500/30 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                              stroke="currentColor" class="w-9 h-9 text-black/70 dark:text-darkBlack/70">
@@ -84,7 +84,7 @@
                     {{ component('H3', {label: "Email", class: "py-3 text-black/60 dark:text-darkBlack/60"}) }}
                     {{ company.email }}
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center my-8 md:my-0">
                     <span class="block w-16 h-16 rounded-full bg-secondary/10 bg-secondary/30 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                              stroke="currentColor" class="w-9 h-9 text-black/70 dark:text-darkBlack/70">
@@ -95,7 +95,7 @@
                     {{ component('H3', {label: "Téléphone", class: "py-3 text-black/60 dark:!text-darkBlack/60"}) }}
                     {{ company.phone }}
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center my-8 md:my-0">
                     <span class="block w-16 h-16 rounded-full bg-black/10 dark:bg-darkBlack/30 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                              stroke="currentColor" class="w-9 h-9 text-black/60 dark:text-darkBlack/60">
