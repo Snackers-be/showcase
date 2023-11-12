@@ -19,14 +19,19 @@
                 envoyez-moi un message, et je vous répondrai dès que possible.
             </div>
         </div>
-        <div class="w-full md:max-w-5xl grid md:grid-cols-2 mx-auto">
+        <div class="w-full md:max-w-5xl grid lg:grid-cols-2 mx-auto">
             <div class="p-6 flex flex-col justify-center items-center">
 
-                <figure>
-                    <img src="/images/map-demos.png" alt="" class="w-full aspect-square">
-                </figure>
-            </div>
+                {#                <figure style="background-image: url({{ asset('images/map-liege-01.webp') }})"> #}
+                {#                    <img src="{{ asset('images/map-liege-01.webp') }}" alt="" class="w-full aspect-square"> #}
+                {#                </figure> #}
+{#            </div>#}
+            <div style="background-image: url({{ asset('images/map-liege-01.webp') }})"
+                 class="w-full aspect-video lg:aspect-74 bg-no-repeat bg-center bg-cover
+">
 
+            </div>
+            </div>
             <div class=" w-full h-full p-6">
                 <div class="border border-black/10 dark:border-darkBlack/10 rounded-lg  w-full h-full p-6">
                     <p>Pour un rensignement ou un rendez-vous, remplissez le formulaire ci-dessous ou envoyez moi
@@ -36,25 +41,25 @@
 
                         <div class="flex flex-col mb-6">
                             {{ form_label(form.name, null, { 'label_attr': {'class': 'mb-3'} }) }}
-                            {{ form_widget(form.name, { 'attr': {'class': 'w-full rounded-md leading-loose border border-black/10'} }) }}
+                            {{ form_widget(form.name, { 'attr': {'class': 'w-full rounded-md leading-loose border border-black/10 text-black px-3'} }) }}
                             {{ form_errors(form.name, { 'attr': {'class': 'text-secondary leading-loose'} }) }}
                         </div>
 
                         <div class="flex flex-col mb-6">
                             {{ form_label(form.email, null, { 'label_attr': {'class': 'mb-3'} }) }}
-                            {{ form_widget(form.email, { 'attr': {'class': 'w-full rounded-md leading-loose border border-black/10'} }) }}
+                            {{ form_widget(form.email, { 'attr': {'class': 'w-full rounded-md leading-loose border border-black/10 text-black px-3'} }) }}
                             {{ form_errors(form.email, { 'attr': {'class': 'text-secondary leading-loose'} }) }}
                         </div>
 
                         <div class="flex flex-col mb-6">
                             {{ form_label(form.phone, null, { 'label_attr': {'class': 'mb-3'} }) }}
-                            {{ form_widget(form.phone, { 'attr': {'class': 'w-full rounded-md leading-loose border border-black/10'} }) }}
+                            {{ form_widget(form.phone, { 'attr': {'class': 'w-full rounded-md leading-loose border border-black/10 text-black px-3'} }) }}
                             {{ form_errors(form.phone, { 'attr': {'class': 'text-secondary leading-loose'} }) }}
                         </div>
 
                         <div class="flex flex-col mb-6">
                             {{ form_label(form.message, null, { 'label_attr': {'class': 'mb-3'} }) }}
-                            {{ form_widget(form.message, { 'attr': {'rows': '5', 'class': 'w-full h-40 rounded-md leading-loose border border-black/10'} }) }}
+                            {{ form_widget(form.message, { 'attr': {'rows': '5', 'class': 'w-full h-40 rounded-md leading-loose border border-black/10 text-black px-3'} }) }}
                             {{ form_errors(form.message, { 'attr': {'class': 'text-secondary leading-loose'} }) }}
                         </div>
 
@@ -107,9 +112,9 @@
                     </span>
                     {{ component('H3', {label: "Adresse", class: "py-3  text-black/70 dark:text-darkBlack/70"}) }}
                     <p class="text-left pl-1/5">
-                        Grivegnée<br />
-                        {#{{ company.streetName }}{{ company.streetNr }} <br/>
-                        {{ company.postalCode }}    {{ company.postalCity }}#}
+                        Grivegnée<br/>
+                        {# {{ company.streetName }}{{ company.streetNr }} <br/>
+                        {{ company.postalCode }}    {{ company.postalCity }} #}
                     </p>
                 </div>
             </div>
