@@ -1,4 +1,4 @@
-<header class="absolute w-full top-0 left-0 z-10 " {{ stimulus_controller('menu') }}>
+<header class="absolute w-full top-0 left-0 z-30 " {{ stimulus_controller('menu') }}>
     {#    mobile #}
     <div class="lg:hidden" {{ stimulus_target('menu', 'mobile') }}>
         <div class=" w-full p-5 bg-white/5 dark:bg-darkWhite/10 overflow-hidden grid grid-cols-12 gap-4  absolute top-0 left-O">
@@ -17,7 +17,7 @@
                 </svg>
             </div>
         </div>
-        <nav class="min-h-[50vh] pt-12 text-xl flex flex-col gap-5 text-black -mt-[70vh] -z-40 transition-all duration-500 ease-in-out bg-white dark:bg-darkWhite"
+        <nav class="min-h-[50vh] pt-12 text-xl flex flex-col gap-5 text-black -mt-[70vh] -z-40 opacity-95 transition-all duration-500 ease-in-out bg-white dark:bg-darkWhite"
                 {{ stimulus_target('menu', 'nav') }}>
             <ul class="pl-6 pt-16">
 
