@@ -36,8 +36,8 @@
             </div>
             <div class=" w-full h-full p-6">
                 <div class="border border-black/10 dark:border-darkBlack/10 rounded-lg  w-full h-full p-6">
-                    <p>Pour un rensignement ou un rendez-vous, remplissez le formulaire ci-dessous ou envoyez moi
-                        un {{ component('Link', { label: 'email', link:'mailto:'}) }}</p>
+                    <p>Pour un renseignement ou un rendez-vous, remplissez le formulaire ci-dessous ou envoyez moi
+                        un {{ component('Link', { label: 'email', link:'mailto:info@snackers.be'}) }}</p>
                     <div class="my-16 p-3">
                         {{ form_start(form) }}
 
@@ -63,6 +63,11 @@
                             {{ form_label(form.message, null, { 'label_attr': {'class': 'mb-3'} }) }}
                             {{ form_widget(form.message, { 'attr': {'rows': '5', 'class': 'w-full h-40 rounded-md leading-loose border border-black/10 text-black px-3'} }) }}
                             {{ form_errors(form.message, { 'attr': {'class': 'text-secondary leading-loose'} }) }}
+                        </div>
+                        <div class="flex flex-col mb-6">
+                            {{ form_label(form.message, 'Merci de recopier les caractères ci-dessous', { 'label_attr': {'class': 'mb-3'} }) }}
+                            {{ form_widget(form.captcha, { 'attr': {'class': 'w-full rounded-md leading-loose border border-black/10 text-black px-3'} }) }}
+                            {{ form_errors(form.captcha, { 'attr': {'class': 'text-secondary leading-loose'} }) }}
                         </div>
 
                         <div class="flex flex-col mb-6">
