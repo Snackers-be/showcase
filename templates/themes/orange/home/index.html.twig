@@ -1,16 +1,16 @@
 {% extends 'themes/'~app_theme~'/base.html.twig' %}
 
-{% block title %}Création de Sites Internet & Outils Web pour Snacks et Sandwicheries | snackers.be{% endblock %}
-{% block meta_description %}Création de sites internet et d'outils web sur mesure pour snacks et sandwicheries. Optimisez votre présence en ligne pour attirer plus de clients et simplifiez votre gestion d'entreprise. Contactez-nous dès aujourd'hui ! | Liège{% endblock %}
-{% block og_title %}Création de Sites Internet & Outils Web pour Snacks et Sandwicheries | snackers.be {% endblock %}
-{% block og_description %}Création de sites internet et d'outils web sur mesure pour snacks et sandwicheries. Optimisez votre présence en ligne pour attirer plus de clients et simplifiez votre gestion d'entreprise. Contactez-nous dès aujourd'hui ! | Liège{% endblock %}
+{% block title %}Création de Site Web Sur Mesure à Liège pour l'HoReCa | Suivi Évolutif | [snackers.be]{% endblock %}
+{% block meta_description %}Implanté à Liège, je combine passion, rigueur dans la création de sites internet sur mesure pour les snacks. J'assure un suivi continu pour votre site web, offrant ainsi à votre entreprise une présence en ligne évolutive | [snackers.be] création de site web à Liège pour l’HoReCa{% endblock %}
+{% block og_title %}Création de Site Web Sur Mesure à Liège pour l'HoReCa | Suivi Évolutif | [snackers.be]{% endblock %}
+{% block og_description %}Implanté à Liège, je combine passion, rigueur dans la création de sites internet sur mesure pour les snacks. J'assure un suivi continu pour votre site web, offrant ainsi à votre entreprise une présence en ligne évolutive | [snackers.be] création de site web à Liège pour l’HoReCa{% endblock %}
 {% block body %}
 
     {% if setup is not empty %}
         {% include 'themes/'~app_theme~'/sections/home/hero.html.twig' %}
     {% endif %}
     {% include 'themes/'~app_theme~'/sections/service/services.html.twig' %}
-{#    {% include 'themes/'~app_theme~'/sections/news/news-home.html.twig' %}#}
+    {% include 'themes/'~app_theme~'/sections/news/news-home.html.twig' %}
 {#    {% include 'themes/'~app_theme~'/sections/album/albums-home.html.twig' %}#}
     {% include 'themes/'~app_theme~'/sections/social-networks/home.html.twig' %}
 
