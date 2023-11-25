@@ -27,7 +27,7 @@ class SendMessage implements SendMessageInterface
             ->priority(Email::PRIORITY_HIGH)
             ->subject('Nouveau message de la page de contact')
             ->text($email.'/n'.$phone.'/n'.$message)
-            ->html('<p>' . $email . '</p>'. '<p>' . $message . '</p>');
+            ->html('<p>' . $email . '</p>'. '<p>' . $phone . '</p>'. '<p>' . $message . '</p>');
 
         $this->mailer->send($email);
 
