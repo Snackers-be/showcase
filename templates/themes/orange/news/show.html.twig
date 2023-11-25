@@ -1,0 +1,18 @@
+{% extends 'themes/'~app_theme~'/layouts/page-layout.html.twig' %}
+
+        {% block page_title %}
+            {{ component("H1", {label: news.title}) }}
+        {% endblock %}
+
+{% block title %}Les actus{% endblock %}
+
+{% block body %}
+    <div  class="w-full md:w-2/3 mx-auto p-16 md:p-0 text-lg leading-loose">
+        <figure>
+            <img class="w-full md:w-72 block md:inline-block float-left mr-6 mb-6 "
+                 src="/images/news/{{ news.image }}" alt="{{ news.title }}|image" />
+        </figure>
+        {{ news.content |raw }}
+    </div>
+
+{% endblock %}
