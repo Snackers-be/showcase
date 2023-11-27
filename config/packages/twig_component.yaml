@@ -1,0 +1,3 @@
+twig_component:
+  component_paths:
+    - '%kernel.project_dir%/templates/themes/%env(APP_THEME)%/components'

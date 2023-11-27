@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class NewsController extends AbstractController
 {
-    #[Route('/articles/', name: 'app_news')]
+    #[Route('/articles', name: 'app_news')]
     public function index(NewsRepository $newsRepository, PaginatorInterface $paginator, Request $request ): Response
     {
         $news = $paginator->paginate(
